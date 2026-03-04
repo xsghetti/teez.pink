@@ -4,36 +4,30 @@ body {
   color: #ff2fa3;
 
   display: flex;
-  justify-content: center;
+  justify-content: safe center;
   align-items: center;
   min-height: 100vh;
-  min-height: 100svh;
 
   font-family: monospace;
+  overflow-x: auto;
 }
 
 .container {
   text-align: center;
-  max-width: 100%;
-  overflow-x: auto;
-  padding: 0 8px;
-  box-sizing: border-box;
 }
 
 pre {
   white-space: pre;
   line-height: 1;
-  font-size: clamp(4px, 1.3vw, 10px);
+  font-size: clamp(4px, 1.5vw, 10px);
   text-shadow: 0 0 12px #F32B99;
-  display: inline-block;
-  text-align: left;
 }
 
 /* Blinking cursor */
 .cursor {
   display: inline-block;
   margin-top: 5px;
-  font-size: clamp(5px, 1.5vw, 12px);
+  font-size: 12px;
   text-shadow: 0 0 12px #ff2fa3;
   animation: blink 1s infinite;
 }
